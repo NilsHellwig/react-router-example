@@ -1,12 +1,35 @@
-# React + Vite
+# 🧭 React Router Beispiel (Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dies ist ein einfaches Beispielprojekt mit [React Router](https://reactrouter.com/) und Vite, das grundlegende Routing-Funktionalitäten demonstriert.
 
-Currently, two official plugins are available:
+## 🔧 Funktionen
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navigation zwischen **Startseite**, **Über uns**, **Kontakt**
+- Dynamische Route für **Städte** (`/city/:city`)
+- **404 Not Found**-Seite bei ungültigen Pfaden
+- Beispiel für Zustandsverwaltung mit `useState`
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Starten
+
+1. Installieren der Abhängigkeiten:
+
+   ```bash
+   npm install
+
+   ```
+
+2. Entwicklung starten:
+   ```bash
+   npm run dev
+   ```
+
+## Beispiel Routen
+
+| Pfad           | Komponente      |
+| -------------- | --------------- |
+| `/`            | Home            |
+| `/about`       | About           |
+| `/contact`     | Contact         |
+| `/city/berlin` | City (`berlin`) |
+| `/irgendwas`   | NotFound        |
